@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<modules xmlns="http://www.example.org/Phresco">
+    <module id="mod_phonegap_0.0.2" name="PhoneGap" version="0.0.2" core="false" required="false" groupId="com.github.chrisprice" artifactId="com.github.chrisprice">
+        <contentURL>/modules/tech-android-hybrid/files/mod_phonegap_0.0.2/0.0.2/mod_phonegap_0.0.2-0.0.2.jar</contentURL>
+        <documents>
+            <document documentType="HELP_TEXT">
+                <content>PhoneGap is an HTML5 app platform that allows you to author native applications with web technologies and get access to APIs and app stores.Even though user works on web based application[hybrid apps] while using phone gap user feel as if they are working on native applications.</content>
+            </document>
+            <document documentType="DESCRIPTION">
+                <content>PhoneGap is an HTML5 app platform that allows you to author native applications with web technologies and get access to APIs and app stores.</content>
+            </document>
+        </documents>
+    </module>
+</modules>

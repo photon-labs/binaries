@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<modules xmlns="http://www.example.org/Phresco">
+    <module id="mod_alertmanager_1.0" name="AlertManager" version="1.0" core="false" required="false">
+        <contentURL>/modules/tech-sharepoint/files/mod_alertmanager_1.0/1.0/mod_alertmanager_1.0-1.0.zip</contentURL>
+        <documents>
+            <document documentType="HELP_TEXT">
+                <content>SharePoint Alert Manager for SharePoint Server 2007 and SharePoint Foundation 2007 infuses SharePoint with the capability to customize and manage your SharePoint alerts with flexibility, power, and ease-of-use you’ve never imagined. Plus, AM[AlertManager] 2007 adds new Reminder functionality. 
+With SharePoint Alert Manager 2007, SharePoint’s out-of-the-box alerting capabilities explode!
+
+SharePoint Alert Manager 2007 is not a web part, but a full-featured SharePoint alerts management and reminder solution!
+Fully integrated into SharePoint’s Central Admin console and Site Settings. No separate program and interface to learn.
+Ability to manage all alerts from one place – across an entire site collection.
+Subscribe other SharePoint users to alerts on any list, document library or document.
+Target alerts to SharePoint groups or domain groups as well as individual users.
+Customize alert templates with images and branding. You have complete control over the look and content of each alert with custom alert templates.  WYSIWYG HTML editor allows you to customize alert templates or the body of any SharePoint alert.
+New “Reminders” feature allows you to set and receive reminders on tasks or events – or any list item in SharePoint with a date and time field.
+
+The robust feature set of our SharePoint Alert Manager product line continues to expand in this new version with new killer functionality like SharePoint Reminders.  No other SharePoint alerts management solution currently on the market contains the wealth of features we place at your fingertips in SharePoint Alert Manager 2007.</content>
+            </document>
+            <document documentType="DESCRIPTION">
+                <content>AlertManager is a document which  instruct set of instructions to set up alert messages. </content>
+            </document>
+        </documents>
+    </module>
+    <module id="mod_applicationpage_1.0" name="ApplicationPage" version="1.0" core="false" required="false">
+        <contentURL>/modules/tech-sharepoint/files/mod_applicationpage_1.0/1.0/mod_applicationpage_1.0-1.0.zip</contentURL>
+        <documents>
+            <document documentType="HELP_TEXT">
+                <content>An application page is an ASP.NET Web page that is designed for use in a SharePoint Web site. Application pages are a specialized type of ASP.NET page.
+
+1)These pages will be available to all sites of a farm.
+2)They are deployed under &lt;Path name &gt;.
+3)They are available through a virtual directory namely _layout.
+4)These pages are basically for administrative tasks.
+5)By default the page will use the default.master page.
+6)The page is derived from the base class LayoutsPageBase which is derived from Microsoft.SharePoint.WebControls namespace.
+7)Application pages cannot be personalized or customized by the end user because they are defined on the file system.
+
+</content>
+            </document>
+            <document documentType="DESCRIPTION">
+                <content> Application page is an ASP.NET Web page that is designed for use in a SharePoint Web site. Application pages are a specialized type of ASP.NET page. </content>
+            </document>
+        </documents>
+    </module>
+    <module id="mod_eventreceiver_1.0" name="EventReceiver" version="1.0" core="false" required="false">
+        <contentURL>/modules/tech-sharepoint/files/mod_eventreceiver_1.0/1.0/mod_eventreceiver_1.0-1.0.zip</contentURL>
+        <documents>
+            <document documentType="HELP_TEXT">
+                <content>Event Receiver Manager tool draws upon the needs I've had as a SharePoint developer and the ideas of several other tools that just covered part of what I needed them to do but just didn't go quite far enough to make the easy to use and painless.</content>
+            </document>
+            <document documentType="DESCRIPTION">
+                <content>Event Receiver Manager tool draws upon the needs of the developer to add events driven implementation.</content>
+            </document>
+        </documents>
+    </module>
+    <module id="mod_fusioncharts_1.3" name="FusionCharts" version="1.3" core="true" required="false">
+        <contentURL>/modules/tech-sharepoint/files/mod_fusioncharts_1.3/1.3/mod_fusioncharts_1.3-1.3.zip</contentURL>
+        <documents>
+            <document documentType="HELP_TEXT">
+                <content>Fusion Charts Free for SharePoint (FCFS) provides a set of 22 different charts (2D &amp; 3D) that integrates easily into your SharePoint environment (WSS 3.0 / MOSS[Microsoft Office Sharepoint Server] 2007 / Sharepoint Foundation 2007 / Sharepoint Server 2007).
+
+FCFS provides you a powerful way to display very nice looking charts into SharePoint with minimum effort.
+
+Main Features 
+1)Very nice looking charts (see below) 
+2) one WebPart to display directly charts from SharePoint Lists (no coding) 
+3) one WebPart to display charts from XML input (very flexible) 
+4)Can export data to CSV or XML 
+5)Easy installation and deployment 
+6)Compatible with Sharepoint Foundation 2007 &amp; Sharepoint Server 2007 (manual deployment, see 2.0 release)</content>
+            </document>
+            <document documentType="DESCRIPTION">
+                <content>Fusion Charts Free for SharePoint (FCFS) provides a set of 22 different charts (2D &amp; 3D) that integrates easily into your SharePoint environment (WSS 3.0 / MOSS [Microsoft Office SharePoint Services] 2007 / Sharepoint Foundation 2007 / Sharepoint Server 2007).</content>
+            </document>
+        </documents>
+    </module>
+    <module id="mod_listdefinition_1.0" name="ListDefinition" version="1.0" core="false" required="false">
+        <contentURL>/modules/tech-sharepoint/files/mod_listdefinition_1.0/1.0/mod_listdefinition_1.0-1.0.zip</contentURL>
+        <documents>
+            <document documentType="HELP_TEXT">
+                <content>ListDefinition in a Web site based on Microsoft Windows SharePoint Services is a collection of information that you share with team members. For example, we can create a sign-up sheet for an event, or we can create a tasks that we need to track.
+
+We can use the lists that come with our site as is, we can change or delete lists that we don't use, and we can create our own lists. Windows SharePoint Services has templates for links, announcements, contacts, events, tasks, and issues lists. When we create our own lists, we can base them on the designs used for the built-in lists, or we can create custom lists from scratch. 
+
+If we have a Windows SharePoint Services-compatible program such as Microsoft Office Excel 2003 and Microsoft Internet Explorer 5 or later installed, we can create lists that are based on spreadsheets.</content>
+            </document>
+            <document documentType="DESCRIPTION">
+                <content>ListDefinition is a document which  instruct set of instructions to create a Custom List.</content>
+            </document>
+        </documents>
+    </module>
+    <module id="mod_masterpage_1.0" name="MasterPage" version="1.0" core="false" required="false">
+        <contentURL>/modules/tech-sharepoint/files/mod_masterpage_1.0/1.0/mod_masterpage_1.0-1.0.zip</contentURL>
+        <documents>
+            <document documentType="HELP_TEXT">
+                <content>Master pages provide the look and feel for all of the pages in the site.Using master pages we can create a single page template and use it as the basis for multiple pages. Master pages allow us to apply our own personalize style and layout to our SharePoint site, and work with all Application Templates, allowing us to create more advanced customizations.</content>
+            </document>
+            <document documentType="DESCRIPTION">
+                <content> Master pages of SharePoint utilizes features from ASP.NET 2.0. They provide the ability to lay out the framework of a rendered page separate from the page containing the content. </content>
+            </document>
+        </documents>
+    </module>
+    <module id="mod_popupwebpart_1.0" name="PopupWebPart" version="1.0" core="true" required="false">
+        <contentURL>/modules/tech-sharepoint/files/mod_popupwebpart_1.0/1.0/mod_popupwebpart_1.0-1.0.zip</contentURL>
+        <documents>
+            <document documentType="HELP_TEXT">
+                <content>Popup web part allows to create a popup div that might include links to hide it from display in future. The preferences are stored using jQuery, a custom web service, and a list template.
+
+This is a pretty simple SharePoint 2007 project that can be used to display a popup div at any location on a web part page. It is made up of six parts:
+1)An HTML and CSS file to define the contents and design of your popup div
+2)A couple of JavaScript files to define the behaviour of the div
+3)A web part that renders out the required code to reference the CSS and JavaScript files, and also render out the contents of the HTML file (contained in a Site Collection feature)
+4)A list template that provides a basic template to store user preferences associated to the popup div (also contained in a Site Collection feature) - e.g. if the user doesn't want to see the popup again, that preference can be stored in this list
+5)The jQuery 1.6.1 library.
+6)A web service that enables updating of the user preference via SOAP calls made easy with jQuery (deployed to the /_layouts/ folder)</content>
+            </document>
+            <document documentType="DESCRIPTION">
+                <content>Pop upWeb Part allows you to create a popup div that might include links to hide it from display in future. The preferences are stored using jQuery, a custom web service, and a list template.</content>
+            </document>
+        </documents>
+    </module>
+    <module id="mod_progressbar_1.1" name="ProgressBar" version="1.1" core="true" required="false">
+        <contentURL>/modules/tech-sharepoint/files/mod_progressbar_1.1/1.1/mod_progressbar_1.1-1.1.zip</contentURL>
+        <documents>
+            <document documentType="HELP_TEXT">
+                <content>Progress bar is a field column for different type lists such as Custom List, Document Library, Issue Tracking, not only for Issue Tracking type list.
+This control is display progress in the field in percent (0-100%). 
+
+Following are the features of the Progress Bar:
+1)Display progress (0-100%)
+2)Simple in use
+3)Simple installation
+4)Use tooltip
+5)Orientation
+      (i)  Horizontal
+      (ii) Vertical
+6)Change fill color</content>
+            </document>
+            <document documentType="DESCRIPTION">
+                <content>Progress bar features provides a custom column field which provides a graphical representation of the progress data (0-100%) entered.</content>
+            </document>
+        </documents>
+    </module>
+    <module id="mod_regularexpression_1.1" name="RegularExpression" version="1.1" core="true" required="false">
+        <contentURL>/modules/tech-sharepoint/files/mod_regularexpression_1.1/1.1/mod_regularexpression_1.1-1.1.zip</contentURL>
+        <documents>
+            <document documentType="HELP_TEXT">
+                <content>Regular expression project is a custom field for SharePoint 2007 platform including Windows SharePoint Services 3.0 (WSS) and Microsoft Office SharePoint Server 2007 (MOSS). This custom field is a regular expression validator. When you create a new Regular expression field, you have to provide a Regular expression and a custom error message. When a user tries to create/edit this field, this custom field checks if the value matches the regular expression.
+
+This custom field will be deployed within a feature and a solution package (.wsp).</content>
+            </document>
+            <document documentType="DESCRIPTION">
+                <content>Regular Expression feature provides a custom field to valid input data using regular expression. This features helps in validating data like email id, telephone no, mobile no, alphanumeric data, etc. based on the regular expression input provided.</content>
+            </document>
+        </documents>
+    </module>
+    <module id="mod__1.0" name="" version="1.0" core="false" required="false">
+        <documents/>
+    </module>
+    <module id="mod__1.0" name="" version="1.0" core="false" required="false">
+        <documents/>
+    </module>
+    <module id="mod__1.0" name="" version="1.0" core="false" required="false">
+        <documents/>
+    </module>
+    <module id="mod__1.0" name="" version="1.0" core="false" required="false">
+        <documents/>
+    </module>
+    <module id="mod__1.0" name="" version="1.0" core="false" required="false">
+        <documents/>
+    </module>
+    <module id="mod__1.0" name="" version="1.0" core="false" required="false">
+        <documents/>
+    </module>
+    <module id="mod__1.0" name="" version="1.0" core="false" required="false">
+        <documents/>
+    </module>
+</modules>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<modules xmlns="http://www.example.org/Phresco">
+    <module id="mod_blog_1.0" name="Blog" version="1.0" core="false" required="false">
+        <contentURL>/modules/tech-php/files/mod_blog_1.0/1.0/mod_blog_1.0-1.0.zip</contentURL>
+        <documents>
+            <document documentType="HELP_TEXT">
+                <content>Blogger module to create a blogging server. Ablity of the user can post comments, reply for posted comments.
+
+Blog Features:
+1)Multiple language support.
+2)Simple css setup with unlimited visual combinations at your control.
+3)Installation is an easy single step process.
+4)Copy and paste only one line of code to insert the blog on your web page.
+5)Text/html editor for the post text.
+6)Image, flash and youtube clips supported in the post text.
+7)Search for posts option.
+8)Number of posts per page.
+9)Sort the order of comments.
+10)Server time offset for the comments time.
+11)Option to create a list with banned words.
+12)Prevention of HTML injections.
+13)Approve comments before having them listed.
+14)Email address where all new comments notifications will be sent to.
+15)Blog RSS Feed - validated by W3C.</content>
+            </document>
+            <document documentType="DESCRIPTION">
+                <content>Blog are mainly used to  post comments, create comments and to share the content.
+
+
+</content>
+            </document>
+        </documents>
+    </module>
+    <module id="mod__1.0" name="" version="1.0" core="false" required="false">
+        <documents/>
+    </module>
+</modules>

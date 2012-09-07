@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<modules xmlns="http://www.example.org/Phresco">
+    <module id="mod_ocunitreportgenerator_1.0" name="OCUnitReportGenerator" version="1.0" core="true" required="true">
+        <contentURL>/modules/tech-iphone-native/files/mod_ocunitreportgenerator_1.0/1.0/mod_ocunitreportgenerator_1.0-1.0.zip</contentURL>
+        <documents>
+            <document documentType="HELP_TEXT">
+                <content>OCUnit report generator Library that generates Junit style report from OCUnit logger files. These sources needs to be added as sources for compilation available at ThirdParty/OCUnitReportLogger</content>
+            </document>
+            <document documentType="DESCRIPTION">
+                <content>OC Unit report generator Library that generates Junit style report from OCUnit logger files</content>
+            </document>
+        </documents>
+    </module>
+    <module id="mod_configurationreader_1.0" name="ConfigurationReader" version="1.0" core="true" required="true">
+        <contentURL>/modules/tech-iphone-native/files/mod_configurationreader_1.0/1.0/mod_configurationreader_1.0-1.0.zip</contentURL>
+        <documents>
+            <document documentType="HELP_TEXT">
+                <content>Configuration reader library to read and write XML configuration created by phresco</content>
+            </document>
+            <document documentType="DESCRIPTION">
+                <content>Library to read and write XML configuration created by phresco</content>
+            </document>
+        </documents>
+    </module>
+    <module id="mod_sbjson_2.3.2" name="SBJSON" version="2.3.2" core="false" required="true">
+        <contentURL>/modules/tech-iphone-native/files/mod_sbjson_2.3.2/2.3.2/mod_sbjson_2.3.2-2.3.2.zip</contentURL>
+        <documents>
+            <document documentType="HELP_TEXT">
+                <content>A strict JSON parser and generator for Objective-C. It adds categories to existing Objective-C objects for a super-simple interface. More flexible APIs are also provided for added control. 
+
+</content>
+            </document>
+            <document documentType="DESCRIPTION">
+                <content>A strict JSON parser and generator for Objective-C.</content>
+            </document>
+        </documents>
+    </module>
+</modules>

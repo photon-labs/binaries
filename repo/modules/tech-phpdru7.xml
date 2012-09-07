@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<modules xmlns="http://www.example.org/Phresco">
+    <module id="mod_views_7.x-3.0-rc1" name="Views" version="7.x-3.0-rc1" core="false" required="false">
+        <contentURL>/modules/tech-phpdru7/files/mod_views_7.x-3.0-rc1/7.x-3.0-rc1/mod_views_7.x-3.0-rc1-7.x-3.0-rc1.tar.gz</contentURL>
+        <dependentModules>mod_modalframe_6.x-1.3</dependentModules>
+        <documents>
+            <document documentType="HELP_TEXT">
+                <content>The Views module provides a flexible method for Drupal site designers to control how lists and tables of content (nodes in Views 1, almost anything in Views 2) are presented. Traditionally, Drupal has hard-coded most of this, particularly in how taxonomy and tracker lists are formatted.</content>
+            </document>
+            <document documentType="DESCRIPTION">
+                <content>This module provides a flexible method for Drupal site designers to control how lists and tables of content are presented. 
+
+When installing Views on Drupal 7, you should have the current stable version of CTools (currently rc1) and you may need to flush cache as much as twice. There are currently issues with core's cache flushing that means one cache flush isn't necessarily enough.
+What is Views
+
+The Views module provides a flexible method for Drupal site designers to control how lists and tables of content (nodes in Views 1, almost anything in Views 2) are presented. Traditionally, Drupal has hard-coded most of this, particularly in how taxonomy and tracker lists are formatted.
+
+This tool is essentially a smart query builder that, given enough information, can build the proper query, execute it, and display the results. It has four modes, plus a special mode, and provides an impressive amount of functionality from these modes.
+
+Among other things, Views can be used to generate reports, create summaries, and display collections of images and other content.
+You need Views if
+
+You like the default front page view, but you find you want to sort it differently.
+You like the default taxonomy/term view, but you find you want to sort it differently; for example, alphabetically.
+You use /tracker, but you want to restrict it to posts of a certain type.
+You like the idea of the 'article' module, but it doesn't display articles the way you like.
+You want a way to display a block with the 5 most recent posts of some particular type.
+You want to provide 'unread forum posts'.
+You want a monthly archive similar to the typical Movable Type/Wordpress archives that displays a link to the in the form of &quot;Month, YYYY (X)&quot; where X is the number of posts that month, and displays them in a block. The links lead to a simple list of posts for that month. 
+
+Views can do a lot more than that, but those are some of the obvious uses of Views.
+Dependencies
+
+The Drupal 7 version of Views requires the Chaos Tool Suite also known as CTools.
+Views' bug squad
+
+The Views' bug squad is a group of people who have dedicated a few hours a week to help provide support and fix bugs in the issue queue. They are the first line for answering questions and properly filing issues. Anyone who wishes to join the Bug Squad to help others may do so to help contribute to the Drupal community!
+Views documentation
+
+Views 1
+Views 2 (This link goes to the Advanced Help project page. All Views documentation is included with its installation. For your convenience, you may also visit http://views-help.doc.logrus.com. This site may or may not be fully up to date at any given time.)
+Views 2 API (doxygen generated from Views 2 source. Only useful to developers.)
+Views 3 documentation hasn't been written yet. Items of note are:
+Only UID1 can import a View.
+
+</content>
+            </document>
+        </documents>
+    </module>
+    <module id="mod_entity_api_7.x-1.0-rc1" name="Entity API" version="7.x-1.0-rc1" core="false" required="false">
+        <contentURL>/modules/tech-phpdru7/files/mod_entity_api_7.x-1.0-rc1/7.x-1.0-rc1/mod_entity_api_7.x-1.0-rc1-7.x-1.0-rc1.zip</contentURL>
+        <documents>
+            <document documentType="HELP_TEXT">
+                <content>Enables modules to work with any entity type and to provide entities.
+
+This module extends the entity API of Drupal core in order to provide a unified way to deal with entities and their properties. Additionally, it provides an entity CRUD controller, which helps simplifying the creation of new entity types.</content>
+            </document>
+            <document documentType="DESCRIPTION">
+                <content>It enables modules to work with any entity type and to provide entities.
+
+This module extends the entity API of Drupal core in order to provide a unified way to deal with entities and their properties. Additionally, it provides an entity CRUD controller, which helps simplifying the creation of new entity types.
+
+Features
+
+This is an API module, so it doesn't provide any end-user features. However, users may enable the entity tokens module, which provides token replacements for all entity properties that have no tokens and are known to the entity API.
+
+Overview
+
+The module provides API functions allowing modules to create, save, delete, view or to determine access for any entity, i.e. entity_create(), entity_save(), entity_delete(), entity_view() and entity_access().
+
+The entity API introduces a unique place for metadata about entity relationships and entity properties: hook_entity_property_info(). This information about entity properties contains the data type and callbacks for how to get and set the data of a property. Modules may rely on this information in order to support any entity property, e.g. Rules and the Search API build upon that.
+
+Furthermore the module provides data wrappers that make use of the available information to provide a simple and unified access to entities and their properties. For usage examples have a look at the README or the provided tests.
+
+Beside that, the module helps you defining a new entity type. For that, it provides an entity controller, which implements full CRUD functionality for your entities. Optionally, entities may be created based on classes derived from the provided Entity class.
+
+The entity API cares about creating fieldable entities as well as exportable entities, however it does not yet support revisions. Additionally it supports implementing bundle entities, i.e. bundle objects (like node types) for fieldable entities implemented as (exportable) entities, for which the appropriate field API callbacks get automatically invoked.
+
+For entity types implemented based upon the provided CRUD API the API is providing additional module integration too, i.e. Rules events are provided for all CRUD-related hooks, some basic entity property information for hook_entity_property_info() is provided and exportable entities are automatically integrated with the Features module.
+
+These module integrations are implemented in separate controller classes, which may be separately overridden or enabled/deactivated.
+Optionally, the entity API also helps providing an administrative interface for managing entities, e.g. the UI for managing profile types of Profile 2 is built with that.
+</content>
+            </document>
+        </documents>
+    </module>
+    <module id="mod_taxonomy_manager_7.x-1.0-beta2" name="Taxonomy Manager" version="7.x-1.0-beta2" core="false" required="false">
+        <contentURL>/modules/tech-phpdru7/files/mod_taxonomy_manager_7.x-1.0-beta2/7.x-1.0-beta2/mod_taxonomy_manager_7.x-1.0-beta2-7.x-1.0-beta2.tar.gz</contentURL>
+        <dependentModules>mod_cck_6.x-2.2</dependentModules>
+        <dependentModules>mod_bulk-delete_1.3</dependentModules>
+        <dependentModules>mod_entity_api_7.x-1.0-rc1</dependentModules>
+        <dependentModules>mod_taxonomy_manager_7.x-1.0-beta2</dependentModules>
+        <documents>
+            <document documentType="HELP_TEXT">
+                <content>This module provides a powerful interface for managing taxonomies. A vocabulary gets displayed in a dynamic tree view, where parent terms can be expanded to list their nested child terms or can be collapsed.</content>
+            </document>
+            <document documentType="DESCRIPTION">
+                <content>This module provides a powerful interface for managing taxonomies. A vocabulary gets displayed in a dynamic tree view, where parent terms can be expanded to list their nested child terms or can be collapsed.
+
+The Taxonomy Manager has following operations and key features:
+
+    dynamic treeview
+    mass deleting
+    mass adding of new terms
+    moving of terms in hierarchies
+    merging of terms (using the Term merge module in 7.x)
+    fast weight changing with up and down arrows (and AJAX saving)
+    AJAX powered term editing form
+    simple search interface
+    CSV Export of terms
+    i18n support for multilingual vocabularies (per language terms)
+    Double Tree interface for moving terms in hierarchies, adding new translations and switching terms between different vocabularies
+
+For using the Taxonomy Manager you should have JavaScript and automatically load of images enabled in your browser.
+
+This is a Google Summer of Code 2007 project. Read my proposal and my status reports for more information.
+
+Taxonomy Manager Drupal 5 and JQuery Upadate module:
+In case you are using the JQuery Update module v2.x on your D5 installation, the Taxonomy Manager won't work. See this issue for more information.
+To fix the problem download the tree.js file and replace it with the one included in the taxonomy manager folder under /js.
+
+Taxonomy Manager Drupal 6 and Panels 3 / Taxonomy Breadcrumb:
+Taxonomy Manager and other taxonomy modules might conflict, if both try to override the taxonomy/term/% path. Taxonomy Manager uses this to redirect previously merged terms to their new term. If you do not need this feature or if you want to used Panels 3 / Taxonomy Breadcrumb, you can disable it under Administer &gt; Site Configuration &gt; Taxonomy Manager. See this issue for more information.
+Note: since 6.x-2.1, the redirect of taxonomy/term is disabled by default</content>
+            </document>
+        </documents>
+    </module>
+    <module id="mod_taxonomy_subterms__7.x-1.x-dev" name="Taxonomy subterms " version="7.x-1.x-dev" core="false" required="false">
+        <contentURL>/modules/tech-phpdru7/files/mod_taxonomy_subterms__7.x-1.x-dev/7.x-1.x-dev/mod_taxonomy_subterms__7.x-1.x-dev-7.x-1.x-dev.tar.gz</contentURL>
+        <dependentModules>mod_cck_6.x-2.2</dependentModules>
+        <dependentModules>mod_bulk-delete_1.3</dependentModules>
+        <dependentModules>mod_entity_api_7.x-1.0-rc1</dependentModules>
+        <dependentModules>mod_taxonomy_manager_7.x-1.0-beta2</dependentModules>
+        <documents>
+            <document documentType="HELP_TEXT">
+                <content>Taxonomy Subterms is a simple module to force display child taxonomy terms on the parent taxonomy page of nodes belonging to the current term or/and the children of the current term.</content>
+            </document>
+            <document documentType="DESCRIPTION">
+                <content>Taxonomy Subterms is a simple module to force display child taxonomy terms on the parent taxonomy page of nodes belonging to the current term or/and the children of the current term.
+
+Taxonomy subterms makes use of the exact same page callback of the default taxonomy terms page (or the one you put in place).
+The module just add the depth param with an 'all' value to the original arguments and pass them to the &quot;normal&quot; page callback.</content>
+            </document>
+        </documents>
+    </module>
+    <module id="mod_ubercart_7.x-3.0-rc2" name="Ubercart" version="7.x-3.0-rc2" core="false" required="false">
+        <contentURL>/modules/tech-phpdru7/files/mod_ubercart_7.x-3.0-rc2/7.x-3.0-rc2/mod_ubercart_7.x-3.0-rc2-7.x-3.0-rc2.tar.gz</contentURL>
+        <dependentModules>mod_entity_api_7.x-1.0-rc1</dependentModules>
+        <dependentModules>mod_taxonomy_manager_7.x-1.0-beta2</dependentModules>
+        <dependentModules>mod_taxonomy_subterms__7.x-1.x-dev</dependentModules>
+        <dependentModules xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dependentModules xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <dependentModules>mod_modalframe_6.x-1.3</dependentModules>
+        <dependentModules xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <documents>
+            <document documentType="HELP_TEXT">
+                <content>Ubercart out of the box is a great solution for stores that sell physical goods, digital product downloads, and site memberships.</content>
+            </document>
+            <document documentType="DESCRIPTION">
+                <content>Ubercart out of the box is a great solution for stores that sell physical goods, digital product downloads, and site memberships.
+
+Current Features:
+
+
+
+Configurable product catalog includes catalog pages and a block to display product categories.
+Flexible product creation system with product classes.
+Multiple product image support out of the box.
+Flexible product attributes system.
+Basic product stock level tracking and notification.
+Product features to add file downloads, role promotions, and more to products.
+Single page checkout.
+Automatic account generation (anonymous checkout).
+Customer and administrator checkout notifications.
+Simple order processing (with workflow for automated order processing).
+Simple order creation and editing.
+Integrated payment system that acts as a bridge between acceptable payment methods (check, credit card, purchase order, etc.) and payment gateways (CyberSource, Authorize.net, PayPal, etc.).
+Shipping quotes and fulfillment, including integration with UPS, FedEx, USPS.
+Sales, product, and customer reports.
+Activity logging.
+Much more... and more to come.
+
+Ubercart is PayPal certified and integrates PayPal Website Payments Standard, Website Payments Pro, and Express Checkout. For more information, you can read the Ubercart PayPal information page.</content>
+            </document>
+        </documents>
+    </module>
+    <module id="mod_shopmenu_7.0" name="shopmenu" version="7.0" core="false" required="false">
+        <contentURL>/modules/tech-phpdru7/files/mod_shopmenu_7.0/7.0/mod_shopmenu_7.0-7.0.zip</contentURL>
+        <dependentModules>mod__1.0</dependentModules>
+        <documents>
+            <document documentType="HELP_TEXT">
+                <content>Provideds shopping cart menu and contains ubercart module altered forms.
+
+the &quot;menu&quot; hook (shop_menu). For each merchant from whom I'm using their datafeed, I make code like this in the shop_menu function: function shop_menu($may_cache) {   $items = array();   if ($may_cache) { .... ...</content>
+            </document>
+            <document documentType="DESCRIPTION">
+                <content>Provideds shopping cart menu and contains ubercart module altered forms.
+
+the &quot;menu&quot; hook (shop_menu). For each merchant from whom I'm using their datafeed, I make code like this in the shop_menu function: function shop_menu($may_cache) {   $items = array();   if ($may_cache) { .... ...</content>
+            </document>
+        </documents>
+    </module>
+    <module id="mod__1.0" name="" version="1.0" core="false" required="false">
+        <documents/>
+    </module>
+    <module id="mod__1.0" name="" version="1.0" core="false" required="false">
+        <documents/>
+    </module>
+    <module id="mod__1.0" name="" version="1.0" core="false" required="false">
+        <documents/>
+    </module>
+    <module id="mod__1.0" name="" version="1.0" core="false" required="false">
+        <documents/>
+    </module>
+</modules>

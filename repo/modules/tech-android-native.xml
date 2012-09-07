@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<modules xmlns="http://www.example.org/Phresco">
+    <module id="mod_googlegson_2.2.1" name="GoogleGSON" version="2.2.1" core="false" required="false" groupId="com.google.code.gson" artifactId="com.google.code.gson">
+        <contentURL>/modules/tech-android-native/files/mod_googlegson_2.2.1/2.2.1/mod_googlegson_2.2.1-2.2.1.jar</contentURL>
+        <documents>
+            <document documentType="HELP_TEXT">
+                <content>Gson is a Java library that can be used to convert Java Objects into their JSON representation. It can also be used to convert a JSON string to an equivalent Java object. Gson can work with arbitrary Java objects including pre-existing objects that you do not have source-code of
+
+</content>
+            </document>
+            <document documentType="DESCRIPTION">
+                <content>Google GSON is a Java library that can be used to convert Java Objects into their JSON representation and vice-versa.</content>
+            </document>
+        </documents>
+    </module>
+</modules>
