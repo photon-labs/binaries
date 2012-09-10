@@ -1,0 +1,33 @@
+<assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0 http://maven.apache.org/xsd/assembly-1.1.0.xsd">
+	
+	<baseDirectory>/</baseDirectory> 
+	<formats>
+		<format>zip</format>
+	</formats>
+
+	<fileSets>
+		<!-- filter to copy the contents from the delivery directory -->
+		<fileSet>
+			<directory>${basedir}</directory>
+			<includes>
+			    <include>sonar-3.1.1/**</include>
+			</includes>
+			<excludes>
+			    <exclude>zip-config.xml</exclude>
+				<exclude>pom.xml</exclude>
+			    <exclude>sonar-3.1.1/pom.xml</exclude>
+				<exclude>sonar-3.1.1/war/**</exclude>
+				<exclude>sonar-3.1.1/COPYING</exclude>
+				<exclude>sonar-3.1.1/extras/**</exclude>
+			    <exclude>sonar-3.1.1/deploy.bat</exclude>
+			    <exclude>**/Thumbs.db</exclude>
+			    <exclude>**/.svn/**</exclude>
+			    <exclude>**/target/**</exclude>
+			    <exclude>**/build/**</exclude>
+			</excludes>
+		</fileSet>
+	</fileSets>
+
+</assembly>	
