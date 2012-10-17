@@ -34,5 +34,9 @@ call mvn deploy:deploy-file -DgroupId=binaries -DartifactId=phantomjs -Dversion=
 
 call mvn deploy:deploy-file -DgroupId=binaries -DartifactId=phantomjs -Dversion=1.5.0 -Dclassifier=windows -Dpackaging=zip -Dfile=..\softwares\phantomjs\phantomjs-winx\phantomjs-1.5.0-windows.zip -DrepositoryId=%REPO_ID% -Durl=%REPO_URL%
 
+call mvn deploy:deploy-file -DgroupId=binaries.sharepoint -DartifactId=CabLib -Dversion=10.2.0.0 -Dclassifier=windows32 -Dpackaging=zip -Dfile=..\softwares\cablib\cablib-winx32\CabLib-10.2.0.0-windows32.zip -DrepositoryId=%REPO_ID% -Durl=%REPO_URL%
+
+call mvn deploy:deploy-file -DgroupId=binaries.sharepoint -DartifactId=CabLib -Dversion=10.2.0.0 -Dclassifier=windows64 -Dpackaging=zip -Dfile=..\softwares\cablib\cablib-winx64\CabLib-10.2.0.0-windows64.zip -DrepositoryId=%REPO_ID% -Durl=%REPO_URL%
+
 
 
