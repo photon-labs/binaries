@@ -38,5 +38,9 @@ call mvn deploy:deploy-file -DgroupId=binaries.sharepoint -DartifactId=CabLib -D
 
 call mvn deploy:deploy-file -DgroupId=binaries.sharepoint -DartifactId=CabLib -Dversion=10.2.0.0 -Dclassifier=windows64 -Dpackaging=zip -Dfile=..\softwares\cablib\cablib-winx64\CabLib-10.2.0.0-windows64.zip -DrepositoryId=%REPO_ID% -Durl=%REPO_URL%
 
+call mvn deploy:deploy-file -DgroupId=org.jenkins-ci.main -DartifactId=jenkins-war -Dversion=1.442 -Dpackaging=war -Dfile=..\softwares\jenkins\jenkins-war-1.442.war -DrepositoryId=%REPO_ID% -Durl=%REPO_URL%
+
+call mvn deploy:deploy-file -DgroupId=com.photon.phresco -DartifactId=pdf-font -Dversion=1.0 -Dpackaging=jar -Dfile=..\softwares\pdf-font\pdf-font-1.0.jar -DrepositoryId=%REPO_ID% -Durl=%REPO_URL%
+
 
 
