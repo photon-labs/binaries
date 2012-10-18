@@ -44,5 +44,11 @@ call mvn deploy:deploy-file -DgroupId=org.jenkins-ci.main -DartifactId=cli -Dver
 
 call mvn deploy:deploy-file -DgroupId=com.photon.phresco -DartifactId=pdf-font -Dversion=1.0 -Dpackaging=jar -Dfile=..\softwares\pdf-font\pdf-font-1.0.jar -DrepositoryId=%REPO_ID% -Durl=%REPO_URL%
 
+call mvn deploy:deploy-file -DgroupId=com.microsoft.sqlserver.jdbc.sqlserverdriver -DartifactId=sqlserverdriver -Dversion=4.0 -Dpackaging=jar -Dfile=..\softwares\sqlserverdriver\sqlserverdriver-4.0.jar -DrepositoryId=%REPO_ID% -Durl=%REPO_URL%
+
+call mvn deploy:deploy-file -DgroupId=oracle.jdbc.oracledriver -DartifactId=oracledriver -Dversion=10.2.0.4.0 -Dpackaging=jar -Dfile=..\softwares\oracledriver\oracledriver-10.2.0.4.0.jar -DrepositoryId=%REPO_ID% -Durl=%REPO_URL%
+
+call mvn deploy:deploy-file -DgroupId=com.ibm.db2.jcc.db2Driver -DartifactId=db2Driver -Dversion=1.4.2 -Dpackaging=jar -Dfile=..\softwares\db2Driver\db2Driver-1.4.2.jar -DrepositoryId=%REPO_ID% -Durl=%REPO_URL%
+
 
 
