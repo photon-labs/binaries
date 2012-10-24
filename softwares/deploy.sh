@@ -36,9 +36,15 @@ mvn deploy:deploy-file -DgroupId=binaries.sharepoint -DartifactId=CabLib -Dversi
 
 mvn deploy:deploy-file -DgroupId=org.apache.jmeter -DartifactId=jmeter -Dversion=2.5.1 -Dpackaging=zip -Dfile=../softwares/jmeter/2.5.1/jakarta-jmeter-2.5.1.zip -DrepositoryId=$REPO_ID -Durl=$REPO_URL
 
-
-mvn deploy:deploy-file -DgroupId=binaries.sharepoint -DartifactId=CabLib -Dversion=10.2.0.0 -Dclassifier=windows64 -Dpackaging=zip -Dfile=../softwares/cablib/cablib-winx64/CabLib-10.2.0.0-windows64.zip -DrepositoryId=$REPO_ID -Durl=$REPO_URL
-
 mvn deploy:deploy-file -DgroupId=org.jenkins-ci.main -DartifactId=jenkins-war -Dversion=1.442 -Dpackaging=war -Dfile=../softwares/jenkins/jenkins-war-1.442.war -DrepositoryId=$REPO_ID -Durl=$REPO_URL
 
-mvn deploy:deploy-file -DgroupId=com.photon.phresco -DartifactId=pdf-font -Dversion=1.0 -Dpackaging=jar -Dfile=../softwares/pdf-font/pdf-font-1.0.jar -DrepositoryId=$REPO_ID -Durl=$REPO_URL
+ mvn deploy:deploy-file -DgroupId=org.jenkins-ci.main -DartifactId=cli -Dversion=1.442 -Dpackaging=jar -Dfile=../softwares/jenkins/cli-1.442.jar -DrepositoryId=$REPO_ID -Durl=$REPO_URL
+
+ mvn deploy:deploy-file -DgroupId=com.photon.phresco -DartifactId=pdf-font -Dversion=1.0 -Dpackaging=jar -Dfile=../softwares/pdf-font/pdf-font-1.0.jar -DrepositoryId=$REPO_ID -Durl=$REPO_URL
+
+ mvn deploy:deploy-file -DgroupId=com.microsoft.sqlserver.jdbc.sqlserverdriver -DartifactId=sqlserverdriver -Dversion=4.0 -Dpackaging=jar -Dfile=../softwares/sqlserverdriver/sqlserverdriver-4.0.jar -DrepositoryId=$REPO_ID -Durl=$REPO_URL
+
+ mvn deploy:deploy-file -DgroupId=oracle.jdbc.oracledriver -DartifactId=oracledriver -Dversion=10.2.0.4.0 -Dpackaging=jar -Dfile=../softwares/oracledriver/oracledriver-10.2.0.4.0.jar -DrepositoryId=$REPO_ID -Durl=$REPO_URL
+
+ mvn deploy:deploy-file -DgroupId=com.ibm.db2.jcc.db2Driver -DartifactId=db2Driver -Dversion=1.4.2 -Dpackaging=jar -Dfile=../softwares/db2Driver/db2Driver-1.4.2.jar -DrepositoryId=$REPO_ID -Durl=$REPO_URL
+
