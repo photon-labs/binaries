@@ -50,5 +50,7 @@ call mvn deploy:deploy-file -DgroupId=oracle.jdbc.oracledriver -DartifactId=orac
 
 call mvn deploy:deploy-file -DgroupId=com.ibm.db2.jcc.db2Driver -DartifactId=db2Driver -Dversion=1.4.2 -Dpackaging=jar -Dfile=..\softwares\db2Driver\db2Driver-1.4.2.jar -DrepositoryId=%REPO_ID% -Durl=%REPO_URL%
 
+call mvn deploy:deploy-file -DgroupId=com.google.android -DartifactId=android -Dversion=4.0.3 -Dpackaging=jar -Dfile=..\softwares\android\android-4.0.3.jar -DrepositoryId=%REPO_ID% -Durl=%REPO_URL%
+
 
 
