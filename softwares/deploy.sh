@@ -50,14 +50,14 @@ mvn deploy:deploy-file -DgroupId=org.jenkins-ci.main -DartifactId=jenkins-war -D
 
  mvn deploy:deploy-file -DgroupId=com.google.android -DartifactId=android -Dversion=4.0.3 -Dpackaging=jar -Dfile=../softwares/android/android-4.0.3.jar -DrepositoryId=$REPO_ID -Durl=$REPO_URL
  
- call mvn deploy:deploy-file -DgroupId=net.awired.jstest -DartifactId=jstest-maven-plugin -Dversion=2.0.0.32002 -Dpackaging=jar -Dfile=../softwares/awired/jstest-maven-plugin-2.0.0.32001.jar -DrepositoryId=$REPO_ID -Durl=$REPO_URL
+ mvn deploy:deploy-file -DgroupId=net.awired.jstest -DartifactId=jstest-maven-plugin -Dversion=2.0.0.32002 -Dpackaging=jar -Dfile=../softwares/awired/jstest-maven-plugin-2.0.0.32001.jar -DrepositoryId=$REPO_ID -Durl=$REPO_URL
 
-call mvn deploy:deploy-file -DgroupId=org.seleniumhq.selenium -DartifactId=selenium-java -Dversion=2.25.11 -Dpackaging=jar -Dfile=../softwares/seleniumhq/selenium-java-2.25.11.jar -DrepositoryId=$REPO_ID -Durl=$REPO_URL
+ mvn deploy:deploy-file -DgroupId=org.seleniumhq.selenium -DartifactId=selenium-java -Dversion=2.25.11 -Dpackaging=jar -Dfile=../softwares/seleniumhq/selenium-java-2.25.11.jar -DrepositoryId=$REPO_ID -Durl=$REPO_URL
 
-call mvn deploy:deploy-file -DgroupId=modules.tech-java-webservice.files -DartifactId=yuitest-coverage -Dversion=1.0.0b2 -Dpackaging=jar -Dfile=../../technologies/javawebservice/modules/yuicoverage/yuitest-coverage-1.0.0b2.jar -DrepositoryId=$REPO_ID -Durl=$REPO_URL
+ mvn deploy:deploy-file -DgroupId=modules.tech-java-webservice.files -DartifactId=yuitest-coverage -Dversion=1.0.0b2 -Dpackaging=jar -Dfile=../technologies/javawebservice/modules/yuicoverage/yuitest-coverage-1.0.0b2.jar -DrepositoryId=$REPO_ID -Durl=$REPO_URL
 
-call mvn deploy:deploy-file -DgroupId=modules.tech-java-webservice.files -DartifactId=yuitest-coverage-report -Dversion=1.0.0b2 -Dpackaging=jar -Dfile=../../technologies/javawebservice/modules/yuitest-coverage-report/yuitest-coverage-report-1.0.0b2.jar -DrepositoryId=$REPO_ID -Durl=$REPO_URL
+ mvn deploy:deploy-file -DgroupId=modules.tech-java-webservice.files -DartifactId=yuitest-coverage-report -Dversion=1.0.0b2 -Dpackaging=jar -Dfile=../technologies/javawebservice/modules/yuitest-coverage-report/yuitest-coverage-report-1.0.0b2.jar -DrepositoryId=$REPO_ID -Durl=$REPO_URL
 
+  mvn deploy:deploy-file -DgroupId=net.awired.jscoverage -DartifactId=jscoverage -Dversion=0.3 -Dpackaging=jar -Dfile=../softwares/jscoverage/jscoverage-0.3.jar -DrepositoryId=$REPO_ID -Durl=$REPO_URL
  
- 
- 
+ mvn deploy:deploy-file -DgroupId=net.awired.jscoverage -DartifactId=jscoverage -Dversion=0.3 -Dpackaging=pom -Dfile=../softwares/jscoverage/jscoverage-0.3.pom -DrepositoryId=$REPO_ID -Durl=$REPO_URL
