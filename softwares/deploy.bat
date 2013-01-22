@@ -60,6 +60,6 @@ call mvn deploy:deploy-file -DgroupId=modules.tech-java-webservice.files -Dartif
 
 call mvn deploy:deploy-file -DgroupId=modules.tech-java-webservice.files -DartifactId=yuitest-coverage-report -Dversion=1.0.0b2 -Dpackaging=jar -Dfile=..\technologies\javawebservice\modules\yuitest-coverage-report\yuitest-coverage-report-1.0.0b2.jar -DrepositoryId=%REPO_ID% -Durl=%REPO_URL%
 
-call mvn deploy:deploy-file -DgroupId=net.awired.jscoverage -DartifactId=jscoverage -Dversion=0.3 -Dpackaging=jar -Dfile=../softwares/jscoverage/jscoverage-0.3.jar -DrepositoryId=%REPO_ID% -Durl=%REPO_URL%
+call mvn deploy:deploy-file -DgroupId=net.awired.jscoverage -DartifactId=jscoverage -Dversion=0.3 -Dpackaging=jar -Dfile=..\softwares\jscoverage\jscoverage-0.3.jar -DrepositoryId=%REPO_ID% -Durl=%REPO_URL%
  
- call mvn deploy:deploy-file -DgroupId=net.awired.jscoverage -DartifactId=jscoverage -Dversion=0.3 -Dpackaging=pom -Dfile=../softwares/jscoverage/jscoverage-0.3.pom -DrepositoryId=%REPO_ID% -Durl=%REPO_URL%
+ call mvn deploy:deploy-file -DgroupId=net.awired.jscoverage -DartifactId=jscoverage -Dversion=0.3 -Dpackaging=pom -Dfile=..\softwares\jscoverage\jscoverage-0.3.pom -DrepositoryId=%REPO_ID% -Durl=%REPO_URL%
